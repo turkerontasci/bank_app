@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:bank_app/components/dummy_text.dart';
 import 'package:bank_app/dummy_screens/summary_screen.dart';
 
-class TabMainScreen extends StatefulWidget {
-  const TabMainScreen({super.key});
+class CarouselWidget extends StatefulWidget {
+  const CarouselWidget({super.key});
 
   @override
-  State<TabMainScreen> createState() => _TabMainScreenState();
+  State<CarouselWidget> createState() => _CarouselWidgetState();
 }
 
-class _TabMainScreenState extends State<TabMainScreen> {
+class _CarouselWidgetState extends State<CarouselWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(

@@ -1,6 +1,5 @@
 import 'package:bank_app/components/account_widget.dart';
-import 'package:bank_app/tab_screens/tab_main.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:bank_app/components/carousel_widget.dart';
 import 'package:flutter/material.dart';
 
 class CustomScrollAppBar extends StatelessWidget {
@@ -47,9 +46,9 @@ class CustomScrollAppBar extends StatelessWidget {
           delegate: SliverChildBuilderDelegate(
             // The builder function returns a ListTile with a title that
             // displays the index of the current item.
-            (context, index) => Column(
+            (context, index) => const Column(
               children: [
-                TabMainScreen(),
+                CarouselWidget(),
                 AccountsWidget(),
               ],
             ),

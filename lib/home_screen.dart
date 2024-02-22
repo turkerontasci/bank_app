@@ -33,16 +33,25 @@ class _HomeScreenState extends State<HomeScreen> {
         onTap: _onItemTapped,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(
+              Icons.home,
+              size: 23,
+            ),
             label: "Anasayfa",
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.arrow_right_arrow_left),
+            icon: Icon(
+              CupertinoIcons.arrow_right_arrow_left,
+              size: 23,
+            ),
             label: "Transfer",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.favorite_border),
-            label: "Senin İçin",
+            icon: Icon(
+              Icons.favorite_border,
+              size: 23,
+            ),
+            label: "Sizin İçin",
           ),
         ],
       ),

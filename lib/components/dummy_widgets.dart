@@ -1,3 +1,4 @@
+import 'package:bank_app/dummy_screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 class AccountBox extends StatelessWidget {
@@ -167,13 +168,23 @@ class UserAvatar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(10.0),
-      child: Container(
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(100),
-            border: Border.all(width: 2, color: Colors.white)),
-        child: const Icon(
-          Icons.person,
-          color: Colors.white,
+      child: GestureDetector(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (_) => const ProfileScreen(),
+            ),
+          );
+        },
+        child: Container(
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(100),
+              border: Border.all(width: 2, color: Colors.white)),
+          child: const Icon(
+            Icons.person,
+            color: Colors.white,
+          ),
         ),
       ),
     );

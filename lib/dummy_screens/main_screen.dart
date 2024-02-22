@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../components/account_widget.dart';
 import '../components/dummy_widgets.dart';
-import '../tab_screens/tab_main.dart';
+import '../components/carousel_widget.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -43,7 +43,7 @@ class _MainScreenState extends State<MainScreen> {
         clipBehavior: Clip.none,
         child: Column(
           children: <Widget>[
-            TabMainScreen(),
+            CarouselWidget(),
             AccountsWidget(),
             AccountsWidget(),
           ],
